@@ -17,7 +17,7 @@ pd.set_option("display.float_format",lambda x: "%.5f" % x)
 pd.set_option("display.max_rows",None)
 pd.set_option("display.max_columns",None)
 
-df = pd.read_csv(r"C:\Users\Oguz\Desktop\DCMLBC06\HAFTA07\dataset\diabetes.csv")
+df = pd.read_csv("dataset\diabetes.csv")
 df.head()
 
 100 * df["Outcome"].value_counts() / len(df)
